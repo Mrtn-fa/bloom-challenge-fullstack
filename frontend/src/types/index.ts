@@ -1,11 +1,15 @@
-/** 
-* Debes completar este modelo como consideres adecuado
-*/
-type ExtraFee = {
+export type Brand = {
+  id: string;
+  name: string;
+  url: string;
+  settings?: BrandSettings;
+}
+export type Brands = Brand[]
+
+export type ExtraFee = {
   reason: string;
   amount?: number
 }
-
 
 export type BrandSettings = {
   brandId: string;
